@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel:wght@400;700&family=Crimson+Text:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc8 100%);
+    color: #333;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #8b6f47;
+}
+
+h1 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 3.5em;
+    color: #5c4033;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-family: 'Cinzel', 'Garamond', serif;
+    font-size: 1.3em;
+    color: #8b6f47;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.stations {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.station-introduction {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    margin-bottom: 10px;
+}
+
+.introduction {
+    font-size: 1em;
+    color: #2c2c2c;
+    line-height: 1.5;
+    text-align: justify;
+    letter-spacing: 0.3px;
+}
+
+.station-introduction i {
+    font-family: 'Cinzel', 'Garamond', serif;
+    font-size: 1em;
+    color: #8b6f47;
+    display: block;
+    margin: 10px 0;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.station-introduction h3 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 1.5em;
+    color: #5c4033;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.station-introduction h3 strong {
+    color: #8b6f47;
+    font-weight: 700;
+}
+
+.station-introduction > div {
+    background: #f9f7f3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.station-introduction .hymn{
+    max-width: 500px;
+}
+.prayer {
+    font-size: 1em;
+    color: #8b6f47;
+    line-height: 1.2;
+    font-style: italic;
+    text-align: justify;
+}
+.station-introduction p.a, .reflection p:last-child {
+    font-weight: 600;
+}
+.leader, .all {
+    margin-right: 10px;
+    font-style: italic;
+}
+
+.prayers {
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.hymn-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.station {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.station:nth-child(even) .station-image {
+    order: 2;
+}
+
+.station:nth-child(even) .station-content {
+    order: 1;
+}
+
+.station-number {
+    font-family: 'Cinzel', 'Garamond', serif;
+    font-size: 1.6em;
+    color: #8b6f47;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.station-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 1.3em;
+    color: #5c4033;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d4a574;
+    padding-bottom: 10px;
+}
+
+.station-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.station-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 3px solid #8b6f47;
+    aspect-ratio: 1 / 1.2;
+}
+
+.station-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.reading {
+    font-size: 1em;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    font-style: italic;
+    padding: 10px;
+    background: #f9f7f3;
+    border-left: 4px solid #8b6f47;
+    line-height: 1.5;
+}
+
+.reflection {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.reflection p {
+    margin-bottom: 10px;
+}
+.reflection p:nth-child(2) {
+    font-weight: 600;
+    color: #8b6f47;
+}
+.hymn {
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-style: italic;
+    color: #5c4033;
+    font-size: 0.95em;
+    border-left: 4px solid #8b6f47;
+}
+
+.hymn-title {
+    font-weight: 700;
+    color: #5c4033;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-family: 'Cinzel', 'Garamond', serif;
+}
+.conclusion {
+    background: #f9f7f3;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #8b6f47;
+    margin-top: 20px;
+}
+.conclusion p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 3px solid #8b6f47;
+    color: #8b6f47;
+    font-family: 'Cinzel', 'Garamond', serif;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.copyright {
+    font-size: 0.7em;
+    display: block;
+    color: #8b6f47;
+    font-family: 'Cinzel', 'Garamond', serif;
+    text-align: center;
+}
+
+/* Single column layout from 950px down - Image on top, Content below */
+@media (max-width: 950px) {
+    .station {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .station:nth-child(odd) .station-image,
+    .station:nth-child(even) .station-image {
+        order: 1 !important;
+    }
+
+    .station:nth-child(odd) .station-content,
+    .station:nth-child(even) .station-content {
+        order: 2 !important;
+    }
+
+    .station-image img {
+        max-width: 70%;
+    }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 15px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        font-size: 1.1em;
+        margin-top: 8px;
+    }
+
+    header {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+    .stations {
+        gap: 50px;
+        margin-bottom: 40px;
+    }
+
+    .station-number {
+        font-size: 2em;
+    }
+
+    .station-title {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .station-image img {
+        border: 2px solid #8b6f47;
+    }
+
+    .reading {
+        font-size: 0.95em;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .reflection {
+        font-size: 0.95em;
+        margin-bottom: 15px;
+    }
+
+    .hymn {
+        font-size: 0.9em;
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .station-introduction {
+        padding: 30px;
+        margin-bottom: 50px;
+        border-top: 4px solid #8b6f47;
+        border-left: 2px solid #8b6f47;
+    }
+
+    .introduction {
+        font-size: 1.05em;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+
+    .station-introduction i {
+        font-size: 1em;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .station-introduction h3 {
+        font-size: 1.25em;
+        margin-bottom: 20px;
+    }
+
+    .station-introduction > div {
+        padding: 20px;
+    }
+
+    .prayer {
+        font-size: 0.95em;
+        margin-bottom: 15px;
+        line-height: 1.75;
+    }
+
+    .station-introduction h4 {
+        font-size: 1.05em;
+        margin-bottom: 12px;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-size: 0.95em;
+        margin-top: 5px;
+    }
+
+    header {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #8b6f47;
+    }
+
+    .stations {
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    .station {
+        padding: 15px;
+        gap: 15px;
+        border-radius: 6px;
+    }
+
+    .station-number {
+        font-size: 1.5em;
+        margin-bottom: 3px;
+    }
+
+    .station-title {
+        font-size: 1.2em;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #d4a574;
+        padding-bottom: 8px;
+    }
+
+    .station-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .station-image img {
+        border: 2px solid #8b6f47;
+        border-radius: 6px;
+        max-width: 100%;
+        aspect-ratio: 1 / 1.2;
+    }
+
+    .reading {
+        font-size: 0.9em;
+        padding: 10px;
+        margin-bottom: 12px;
+        border-left: 3px solid #8b6f47;
+        line-height: 1.6;
+    }
+
+    .reflection {
+        font-size: 0.9em;
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+
+    .hymn {
+        font-size: 0.85em;
+        padding: 10px;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+    .hymn-title {
+        margin-bottom: 6px;
+        font-size: 0.95em;
+    }
+
+    footer {
+        padding-top: 25px;
+        padding-bottom: 15px;
+        font-size: 0.95em;
+        border-top: 2px solid #8b6f47;
+    }
+
+    .station-introduction {
+        padding: 20px;
+        margin-bottom: 35px;
+        border-top: 3px solid #8b6f47;
+        border-left: 2px solid #8b6f47;
+        border-radius: 8px;
+    }
+
+    .introduction {
+        font-size: 0.95em;
+        margin-bottom: 15px;
+        line-height: 1.7;
+    }
+
+    .station-introduction i {
+        font-size: 0.95em;
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+
+    .station-introduction h3 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    .station-introduction > div {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .prayer {
+        font-size: 0.9em;
+        margin-bottom: 12px;
+        line-height: 1.65;
+    }
+
+    .station-introduction h4 {
+        font-size: 0.95em;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+    }
+}
+
+/* Extra small devices (360px and below) */
+@media (max-width: 360px) {
+    .container {
+        padding: 10px 8px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+
+    .station {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .station-number {
+        font-size: 1.3em;
+    }
+
+    .station-title {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    .reading {
+        font-size: 0.85em;
+        padding: 8px;
+    }
+
+    .reflection {
+        font-size: 0.85em;
+    }
+
+    .hymn {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .station-introduction {
+        padding: 15px;
+        margin-bottom: 25px;
+        border-top: 2px solid #8b6f47;
+        border-left: 2px solid #8b6f47;
+    }
+
+    .introduction {
+        font-size: 0.9em;
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+
+    .station-introduction i {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .station-introduction h3 {
+        font-size: 1em;
+        margin-bottom: 12px;
+        line-height: 1.4;
+    }
+
+    .station-introduction > div {
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .prayer {
+        font-size: 0.85em;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+    .station-introduction h4 {
+        font-size: 0.9em;
+        margin-bottom: 8px;
+        letter-spacing: 0.3px;
+    }
+}
