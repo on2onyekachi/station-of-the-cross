@@ -303,7 +303,7 @@ footer {
     }
 
     .stations {
-        gap: 50px;
+        gap: 10px;
         margin-bottom: 40px;
     }
 
@@ -313,7 +313,7 @@ footer {
 
     .station-title {
         font-size: 1.3em;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .station-image img {
@@ -321,31 +321,30 @@ footer {
     }
 
     .reading {
-        font-size: 0.95em;
+        font-size: 1rem;
         padding: 12px;
         margin-bottom: 15px;
     }
 
     .reflection {
-        font-size: 0.95em;
-        margin-bottom: 15px;
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
 
     .hymn {
-        font-size: 0.9em;
-        padding: 12px;
+        font-size: 1em;
+        padding: 10px;
         margin-top: 20px;
     }
 
     .station-introduction {
         padding: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .introduction {
         font-size: 1.05em;
         margin-bottom: 20px;
-        line-height: 1.8;
     }
 
     .station-introduction i {
@@ -360,18 +359,12 @@ footer {
     }
 
     .station-introduction > div {
-        padding: 20px;
+        padding: 15px;
+        margin-bottom: 30px;
     }
 
     .prayer {
         font-size: 0.95em;
-        margin-bottom: 15px;
-        line-height: 1.75;
-    }
-
-    .station-introduction h4 {
-        font-size: 1.05em;
-        margin-bottom: 12px;
     }
 }
 
@@ -398,14 +391,8 @@ footer {
         border-bottom: 2px solid #8b6f47;
     }
 
-    .stations {
-        gap: 40px;
-        margin-bottom: 30px;
-    }
-
     .station {
         padding: 15px;
-        gap: 15px;
         border-radius: 6px;
     }
 
@@ -416,7 +403,6 @@ footer {
 
     .station-title {
         font-size: 1.2em;
-        margin-bottom: 12px;
         border-bottom: 1px solid #d4a574;
         padding-bottom: 8px;
     }
@@ -434,24 +420,20 @@ footer {
     }
 
     .reading {
-        font-size: 0.9em;
-        padding: 10px;
-        margin-bottom: 12px;
+        font-size: 0.95em;
+        padding: 8px;
         border-left: 3px solid #8b6f47;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 
     .reflection {
-        font-size: 0.9em;
+        font-size: 0.95em;
         margin-bottom: 12px;
         line-height: 1.6;
     }
 
     .hymn {
-        font-size: 0.85em;
-        padding: 10px;
-        margin-top: 10px;
-        line-height: 1.5;
+        font-size: 0.9em;
     }
 
     .hymn-title {
@@ -462,19 +444,17 @@ footer {
     footer {
         padding-top: 25px;
         padding-bottom: 15px;
-        font-size: 0.95em;
+        font-size: 0.8em;
         border-top: 2px solid #8b6f47;
     }
 
     .station-introduction {
         padding: 20px;
-        margin-bottom: 35px;
     }
 
     .introduction {
         font-size: 0.95em;
         margin-bottom: 15px;
-        line-height: 1.5;
     }
 
     .station-introduction i {
@@ -491,20 +471,17 @@ footer {
 
     .station-introduction > div {
         padding: 15px;
-        margin-top: 15px;
     }
 
     .prayer {
         font-size: 0.9em;
-        margin-bottom: 12px;
-        line-height: 1.65;
     }
 }
 
 /* Extra small devices (360px and below) */
 @media (max-width: 360px) {
     .container {
-        padding: 10px 8px;
+        padding: 10px 5px;
     }
 
     h1 {
@@ -517,30 +494,29 @@ footer {
     }
 
     .station {
-        padding: 12px;
-        gap: 12px;
+        padding: 10px;
     }
 
     .station-number {
-        font-size: 1.3em;
+        font-size: 1rem;
     }
 
     .station-title {
-        font-size: 1.1em;
+        font-size: 1rem;
         margin-bottom: 10px;
     }
 
     .reading {
-        font-size: 0.85em;
+        font-size: 1rem;
         padding: 8px;
     }
 
     .reflection {
-        font-size: 0.85em;
+        font-size: 1rem;
     }
 
     .hymn {
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 8px;
     }
 
@@ -574,13 +550,6 @@ footer {
 
     .prayer {
         font-size: 0.85em;
-        margin-bottom: 10px;
-        line-height: 1.6;
-    }
-
-    .station-introduction h4 {
-        font-size: 0.9em;
-        margin-bottom: 8px;
-        letter-spacing: 0.3px;
+        margin-bottom: 2px;
     }
 }
