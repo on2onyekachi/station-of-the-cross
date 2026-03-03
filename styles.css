@@ -321,7 +321,7 @@ footer {
     }
 
     .reading {
-        font-size: 1rem;
+        font-size: 0.95rem;
         padding: 12px;
         margin-bottom: 15px;
     }
@@ -420,10 +420,10 @@ footer {
     }
 
     .reading {
-        font-size: 0.95em;
+        font-size: 0.93em;
         padding: 8px;
         border-left: 3px solid #8b6f47;
-        line-height: 1.5;
+        /* line-height: 1.5; */
     }
 
     .reflection {
@@ -507,7 +507,7 @@ footer {
     }
 
     .reading {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 8px;
     }
 
