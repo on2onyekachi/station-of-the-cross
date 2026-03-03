@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel:wght@400;700&family=Crimson+Text:ital@0;1&display=swap');
 
+:root {
+    --primary-brown: #8b6f47;
+    --dark-brown: #5c4033;
+    --light-brown: #d4a574;
+    --cream-bg: #f5f1e8;
+    --cream-light: #e8dcc8;
+    --text-light: #f9f7f3;
+    --text-dark: #2c2c2c;
+    --text-body: #333;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +19,9 @@
 
 body {
     font-family: 'Crimson Text', 'Georgia', serif;
-    background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc8 100%);
-    color: #333;
-    line-height: 1.5;
+    background: linear-gradient(135deg, var(--cream-bg) 0%, var(--cream-light) 100%);
+    color: var(--text-body);
+    line-height: 1.8;
     min-height: 100vh;
 }
 
@@ -24,22 +35,27 @@ header {
     text-align: center;
     margin-bottom: 60px;
     padding-bottom: 30px;
-    border-bottom: 3px solid #8b6f47;
+    border-bottom: 3px solid var(--primary-brown);
 }
 
 h1 {
     font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 3.5em;
-    color: #5c4033;
+    color: var(--dark-brown);
     margin-bottom: 10px;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
+h1:focus {
+    outline: 2px solid var(--primary-brown);
+    outline-offset: 4px;
+}
+
 .subtitle {
     font-family: 'Cinzel', 'Garamond', serif;
     font-size: 1.3em;
-    color: #8b6f47;
+    color: var(--primary-brown);
     font-style: italic;
     margin-top: 10px;
 }
@@ -51,27 +67,30 @@ h1 {
 }
 
 .station-introduction {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(249, 247, 243, 0.95) 100%);
+    padding: 50px;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid var(--primary-brown);
+    border-left: 3px solid var(--primary-brown);
     margin-bottom: 10px;
 }
 
 .introduction {
-    font-size: 1em;
-    color: #2c2c2c;
-    line-height: 1.5;
+    font-size: 1.15em;
+    color: var(--text-dark);
+    line-height: 1.9;
     text-align: justify;
     letter-spacing: 0.3px;
+    margin-bottom: 30px;
 }
 
 .station-introduction i {
     font-family: 'Cinzel', 'Garamond', serif;
-    font-size: 1em;
-    color: #8b6f47;
+    font-size: 1.1em;
+    color: var(--primary-brown);
     display: block;
-    margin: 10px 0;
+    margin: 20px 0;
     font-style: italic;
     letter-spacing: 2px;
 }
@@ -79,54 +98,62 @@ h1 {
 .station-introduction h3 {
     font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 1.5em;
-    color: #5c4033;
+    color: var(--dark-brown);
     margin-bottom: 30px;
+    line-height: 1.6;
     text-align: center;
     font-weight: 700;
 }
 
 .station-introduction h3 strong {
-    color: #8b6f47;
+    color: var(--primary-brown);
     font-weight: 700;
 }
 
 .station-introduction > div {
-    background: #f9f7f3;
-    padding: 20px;
+    background: rgba(232, 220, 200, 0.5);
+    padding: 30px;
     border-radius: 8px;
-    margin-bottom: 20px;
-}
-.station-introduction .hymn{
-    max-width: 500px;
-}
-.prayer {
-    font-size: 1em;
-    color: #8b6f47;
-    line-height: 1.2;
-    font-style: italic;
-    text-align: justify;
-}
-.station-introduction p.a, .reflection p:last-child {
-    font-weight: 600;
-}
-.leader, .all {
-    margin-right: 10px;
-    font-style: italic;
+    border-left: 4px solid var(--primary-brown);
+    margin-top: 25px;
 }
 
-.prayers {
-    font-size: 1em;
-    color: #333;
+.station-introduction h4 {
+    font-family: 'Cinzel', 'Garamond', serif;
+    font-size: 1.2em;
+    color: var(--dark-brown);
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     text-align: center;
+}
+
+.prayer {
+    font-size: 1.05em;
+    color: var(--text-body);
+    line-height: 1.85;
+    margin-bottom: 25px;
+    font-style: italic;
+    text-align: justify;
     letter-spacing: 0.2px;
 }
 
-.hymn-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    justify-content: space-evenly;
+.act-of-contrition {
+    font-size: 1.05em;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: rgba(232, 220, 200, 0.3);
+    border-left: 4px solid var(--primary-brown);
+    border-radius: 4px;
+}
+
+.leader, .all {
+    margin-right: 10px;
+    font-style: italic;
+    color: var(--dark-brown);
 }
 
 .station {
@@ -151,7 +178,7 @@ h1 {
 .station-number {
     font-family: 'Cinzel', 'Garamond', serif;
     font-size: 1.6em;
-    color: #8b6f47;
+    color: var(--primary-brown);
     font-weight: 700;
     margin-bottom: 5px;
 }
@@ -159,9 +186,9 @@ h1 {
 .station-title {
     font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 1.3em;
-    color: #5c4033;
+    color: var(--dark-brown);
     margin-bottom: 20px;
-    border-bottom: 2px solid #d4a574;
+    border-bottom: 2px solid var(--light-brown);
     padding-bottom: 10px;
 }
 
@@ -177,7 +204,7 @@ h1 {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    border: 3px solid #8b6f47;
+    border: 3px solid var(--primary-brown);
     aspect-ratio: 1 / 1.2;
 }
 
@@ -189,18 +216,18 @@ h1 {
 
 .reading {
     font-size: 1em;
-    color: #2c2c2c;
+    color: var(--text-dark);
     margin-bottom: 20px;
     font-style: italic;
     padding: 10px;
-    background: #f9f7f3;
-    border-left: 4px solid #8b6f47;
-    line-height: 1.5;
+    background: var(--text-light);
+    border-left: 4px solid var(--primary-brown);
+    line-height: 1.7;
 }
 
 .reflection {
     font-size: 1em;
-    color: #333;
+    color: var(--text-body);
     margin-bottom: 20px;
     line-height: 1.8;
 }
@@ -208,34 +235,38 @@ h1 {
 .reflection p {
     margin-bottom: 10px;
 }
+
 .reflection p:nth-child(2) {
     font-weight: 600;
-    color: #8b6f47;
+    color: var(--primary-brown);
 }
+
 .hymn {
     padding: 15px;
     border-radius: 6px;
     margin-top: 15px;
     font-style: italic;
-    color: #5c4033;
+    color: var(--dark-brown);
     font-size: 0.95em;
-    border-left: 4px solid #8b6f47;
+    border-left: 4px solid var(--primary-brown);
 }
 
 .hymn-title {
     font-weight: 700;
-    color: #5c4033;
+    color: var(--dark-brown);
     margin-bottom: 8px;
     font-style: normal;
     font-family: 'Cinzel', 'Garamond', serif;
 }
+
 .conclusion {
-    background: #f9f7f3;
+    background: var(--text-light);
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #8b6f47;
+    border-left: 4px solid var(--primary-brown);
     margin-top: 20px;
 }
+
 .conclusion p {
     margin-bottom: 10px;
     line-height: 1.5;
@@ -244,18 +275,24 @@ h1 {
 footer {
     text-align: center;
     padding-top: 40px;
-    border-top: 3px solid #8b6f47;
-    color: #8b6f47;
+    border-top: 3px solid var(--primary-brown);
+    color: var(--primary-brown);
     font-family: 'Cinzel', 'Garamond', serif;
     font-size: 1.1em;
     letter-spacing: 1px;
 }
+
 .copyright {
-    font-size: 0.7em;
+    font-size: 0.9em;
     display: block;
-    color: #8b6f47;
+    color: var(--primary-brown);
     font-family: 'Cinzel', 'Garamond', serif;
     text-align: center;
+    padding: 25px 20px;
+    margin-top: 20px;
+    border-top: 1px solid var(--light-brown);
+    letter-spacing: 0.5px;
+    opacity: 0.85;
 }
 
 /* Single column layout from 950px down - Image on top, Content below */
@@ -594,5 +631,70 @@ footer {
         font-size: 0.9em;
         margin-bottom: 8px;
         letter-spacing: 0.3px;
+    }
+}
+
+/* Station conclusion section styling */
+.station-conclusion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.conclusion-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.conclusion-amen {
+    font-weight: 600;
+    color: var(--dark-brown);
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--light-brown);
+}
+
+/* Hymn mobile responsive layout */
+@media (max-width: 768px) {
+    .hymn-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hymn-en, .hymn-la {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Focus states for accessibility */
+a:focus, button:focus, [tabindex]:focus {
+    outline: 2px solid var(--primary-brown);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    header, footer, .copyright {
+        background: white;
+    }
+    
+    .station {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    img {
+        max-width: 100%;
+        page-break-inside: avoid;
     }
 }
