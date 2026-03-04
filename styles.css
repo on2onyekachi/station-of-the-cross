@@ -13,7 +13,9 @@ body {
     line-height: 1.5;
     min-height: 100vh;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .container {
     max-width: 1050px;
     margin: 0 auto;
@@ -240,6 +242,26 @@ h1 {
     line-height: 1.5;
 }
 
+.concluding-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.conclusion-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.concluding-section .station-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 footer {
     text-align: center;
     padding-top: 40px;
@@ -277,6 +299,14 @@ footer {
 
     .station-image img {
         max-width: 70%;
+    }
+    .reflection > p{
+        margin-bottom: 20px;
+    }
+
+    .concluding-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
@@ -423,7 +453,6 @@ footer {
         font-size: 0.93em;
         padding: 8px;
         border-left: 3px solid #8b6f47;
-        /* line-height: 1.5; */
     }
 
     .reflection {
@@ -475,6 +504,12 @@ footer {
 
     .prayer {
         font-size: 0.9em;
+    }
+
+    .concluding-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
     }
 }
 
