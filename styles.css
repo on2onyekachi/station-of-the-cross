@@ -1,9 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel:wght@400;700&family=Crimson+Text:ital@0;1&display=swap');
 
+:root {
+    --color-primary: #8b6f47;
+    --color-dark: #5c4033;
+    --color-light: #f5f1e8;
+    --color-light-cream: #f9f7f3;
+    --color-accent: #d4a574;
+    --color-text: #333;
+    --color-text-light: #2c2c2c;
+
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+    --spacing-xxl: 40px;
+    --spacing-xxxl: 60px;
+
+    --border-radius-sm: 6px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
 
 body {
@@ -107,8 +138,11 @@ h1 {
     font-style: italic;
     text-align: justify;
 }
-.station-introduction p.a, .reflection p:last-child {
+.act-of-contrition {
+    font-size: 1em;
+    color: #333;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .leader, .all {
     margin-right: 10px;
@@ -212,6 +246,10 @@ h1 {
 .reflection p:nth-child(2) {
     font-weight: 600;
     color: #8b6f47;
+}
+.reflection p:last-child {
+    font-weight: 600;
+    margin-top: 10px;
 }
 .hymn {
     padding: 15px;
@@ -468,6 +506,11 @@ footer {
     .hymn-title {
         margin-bottom: 6px;
         font-size: 0.95em;
+    }
+
+    .hymn-content {
+        flex-direction: column;
+        gap: 15px;
     }
 
     footer {
